@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     var color_changed = false // Flag to determine red or blue color change
     var count = 0 // Button clicks to determine Ouch or random number for title
     
-    @IBOutlet weak var buttonColorChange: UIButton! //
+    @IBOutlet weak var buttonColorChange: UIButton! 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +25,10 @@ class ViewController: UIViewController {
         count += 1
         
         if color_changed == false{
-          self.buttonColorChange.backgroundColor = UIColor.red
+          buttonColorChange.backgroundColor = UIColor.red
             color_changed = true
         } else {
-          self.buttonColorChange.backgroundColor = UIColor.blue
+          buttonColorChange.backgroundColor = UIColor.blue
             color_changed = false
         }
         
